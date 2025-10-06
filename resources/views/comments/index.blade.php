@@ -7,3 +7,8 @@ index.blade.php file content
 </ul>
 
 {{-- create a link back to create form --}}
+
+@foreach ($comments as $comment)
+    <h1>{{ $comment->id }}</h1>
+    <p>{{ $comment -> content}}</p><br>
+@endforeach
