@@ -1,12 +1,4 @@
-index.blade.php file content
-
-{{-- display a list of comments in laravel blade view --}}
-
-<ul>
-
-</ul>
-
-{{-- create a link back to create form --}}
+<a href="/comments/create">Create a new comment</a>
 
 @foreach ($comments as $comment)
     <h1>{{ $comment->id }}</h1>
