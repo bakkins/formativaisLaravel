@@ -13,7 +13,7 @@ class CommentController extends Controller
     }
 
     public function create() {
-        return "this has to return create form view";
+        return view('comments.create');
     }
 
     public function store(Request $request) {
@@ -21,7 +21,7 @@ class CommentController extends Controller
             'content' => $request["content"]
         ]);
 
-        return redirect('/comments/list');
+        return redirect('/comments');
     }
 
     // delete functionality has to be implemented
